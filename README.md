@@ -14,7 +14,7 @@ This repo contains postman tests
 
 
 #### To see reports without installation
-Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore [collection](RunReports.zip)
+Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore collection
 
 
 
