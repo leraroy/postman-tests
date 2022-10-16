@@ -30,14 +30,14 @@ jobs:
       - name: Run POSTMAN collection
         continue-on-error: true
         run: |
-           npx newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export testResults/htmlreport.html        
+           npx newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export ./testResults/htmlreport.html        
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
         if: always()
         uses: actions/upload-artifact@v2
         with:
           name: RunReports
-          path: testResults
+          path: ./testResults
           
       - name: Deploy report to Github Pages
         if: always()
@@ -45,4 +45,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: testResults   
+          PUBLISH_DIR: ./testResults   
