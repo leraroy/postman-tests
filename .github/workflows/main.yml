@@ -28,7 +28,7 @@ jobs:
 
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
-        if: always()
+        if: failure()
         continue-on-error: true
         run: newman run petstore.collection.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
         
