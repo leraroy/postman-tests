@@ -1,6 +1,6 @@
 # Postman-tests
 
-This repo contains postman tests
+This repo contains "petsore" and "store" postman collections
 
 ## Setup
 
@@ -10,7 +10,7 @@ This repo contains postman tests
 - Install Visual Studio Code
 - Clone and checkout the github project
 - Go to the terminal and execute "npm install" command
-- Run the "tern-on-api" command
+- Run the "npm run tern-on-api" command
 
 
 #### To see reports without installation
