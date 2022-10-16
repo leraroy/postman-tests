@@ -12,8 +12,9 @@ This repo contains postman tests
 - Go to the terminal and execute "npm install" command
 - Run the "tern-on-api" command
 
+
 #### To see reports without installation
-Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore collection
+Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore [collection](RunReports.zip)
 
 
 
