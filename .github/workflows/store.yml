@@ -25,6 +25,12 @@ jobs:
       # Make directory to upload the test results
       - name: Make Directory for results
         run: mkdir -p testsResults
+        
+      - name: Run
+        run: npm run tern-on-api
+        env:
+         PORT: "3000"
+         STAGE: "local"
 
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
