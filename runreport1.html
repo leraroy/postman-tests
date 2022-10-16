@@ -4,22 +4,22 @@ petstore
 
 ❏ pet
 ↳ Find pet by ID
-  GET http://petstore.swagger.io/v2/pet/123 [200 OK, 466B, 103ms]
+  GET http://petstore.swagger.io/v2/pet/123 [200 OK, 466B, 102ms]
   ✓  Status code is 200
 
 ↳ Updates a pet in the store with form data
-  POST http://petstore.swagger.io/v2/pet/1337 [404 Not Found, 384B, 18ms]
+  POST http://petstore.swagger.io/v2/pet/1337 [404 Not Found, 384B, 17ms]
   1. Status code is 200
 
 ↳ Finds Pets by status
-  GET http://petstore.swagger.io/v2/pet/findByStatus?status=available [200 OK, 87.52kB, 19ms]
+  GET http://petstore.swagger.io/v2/pet/findByStatus?status=available [200 OK, 87.74kB, 17ms]
   ✓  Status code is 200
 
 ↳ Finds Pets by tags
-  GET http://petstore.swagger.io/v2/pet/findByTags?tags=Large [200 OK, 328B, 12ms]
+  GET http://petstore.swagger.io/v2/pet/findByTags?tags=Large [200 OK, 328B, 14ms]
 
 ↳ Deletes a pet
-  DELETE http://petstore.swagger.io/v2/pet/321 [404 Not Found, 384B, 16ms]
+  DELETE http://petstore.swagger.io/v2/pet/321 [404 Not Found, 384B, 13ms]
   2. Status code is 200
 
 ┌─────────────────────────┬───────────────────┬───────────────────┐
@@ -35,11 +35,11 @@ petstore
 ├─────────────────────────┼───────────────────┼───────────────────┤
 │              assertions │                 4 │                 2 │
 ├─────────────────────────┴───────────────────┴───────────────────┤
-│ total run duration: 322ms                                       │
+│ total run duration: 346ms                                       │
 ├─────────────────────────────────────────────────────────────────┤
-│ total data received: 87.44kB (approx)                           │
+│ total data received: 87.66kB (approx)                           │
 ├─────────────────────────────────────────────────────────────────┤
-│ average response time: 33ms [min: 12ms, max: 103ms, s.d.: 34ms] │
+│ average response time: 32ms [min: 13ms, max: 102ms, s.d.: 34ms] │
 └─────────────────────────────────────────────────────────────────┘
 
   #  failure         detail                                                   
