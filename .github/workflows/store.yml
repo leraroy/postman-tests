@@ -26,6 +26,9 @@ jobs:
       - name: Make Directory for results
         run: mkdir -p testsResults
         
+      - name: Install dependencies
+        run: npm install
+        
       - name: Run
         run: npm run tern-on-api
         env:
