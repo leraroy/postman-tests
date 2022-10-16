@@ -27,19 +27,18 @@ jobs:
         run: mkdir -p testResults
 
       # Run the POSTMAN collection
-      - name: Run API tests
+      - name: Run the POSTMAN collection
         continue-on-error: true
-        run: |
-          npx newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export ./testResults/index.html 
+        run: npx newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export ./testResults/index.html 
       
       - name: Output the run Details
-        uses: actions/upload-artifact@v1
         if: always()
+        uses: actions/upload-artifact@v1
         with:
           name: testResults
           path: ./testResults 
 
-      - name: Deploy to pages
+      - name: Deploy report to Github Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
