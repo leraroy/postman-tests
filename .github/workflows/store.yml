@@ -37,6 +37,7 @@ jobs:
              npm run tern-on-api
              newman run store.postman_collection.json -r htmlextra --reporter-htmlextra-export testsResults/htmlreport.html --reporter-htmlextra-darkTheme  > testsResults/runreport1.html
         env:
+         HOST-URL: "http://localhost"
          PORT: "3000"
          STAGE: "local"
          #NODE_ENV: "develop"
