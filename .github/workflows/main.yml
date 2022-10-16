@@ -12,7 +12,7 @@ jobs:
 
       # INstall Node on the runner
       - name: Install Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: 16
      
@@ -31,17 +31,18 @@ jobs:
         continue-on-error: true
         run: |
            npx newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export ./testResults/htmlreport.html        
-      # Upload the contents of Test Results directory to workspace
+     
+     # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v1
         with:
           name: RunReports
           path: ./testResults
           
       - name: Deploy report to Github Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
