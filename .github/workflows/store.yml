@@ -27,7 +27,7 @@ jobs:
         run: mkdir -p testsResults
         
       - name: Store 
-        uses: matt-ball/newman-action@main
+        uses: matt-ball/newman-action@v1
         with:
           collection: store.postman_collection.json
           #environment: postman_environment.json
