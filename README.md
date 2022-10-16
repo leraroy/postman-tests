@@ -13,7 +13,7 @@ This repo contains postman tests
 - Run the "tern-on-api" command
 
 #### To see reports without installation
-Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) 
+Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore collection
 
 
 
