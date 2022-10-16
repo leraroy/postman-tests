@@ -33,9 +33,7 @@ jobs:
       - name: Run POSTMAN collection
         if: always()
         continue-on-error: true
-        run: |
-             npm run tern-on-api
-             newman run store.postman_collection.json -r htmlextra --reporter-htmlextra-export testsResults/htmlreport.html --reporter-htmlextra-darkTheme  > testsResults/runreport1.html
+        run: npm run tern-on-api && newman run store.postman_collection.json -r htmlextra --reporter-htmlextra-export testsResults/htmlreport.html --reporter-htmlextra-darkTheme  > testsResults/runreport1.html
      
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
