@@ -14,7 +14,7 @@ This repo contains "petsore" and "store" postman collections
 
 
 #### To see reports without installation
-Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore collection
+Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore collection 
 
 
 
