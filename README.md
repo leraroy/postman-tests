@@ -22,7 +22,7 @@ The newman run command allows you to specify a collection to be run. You can eas
 Newman also supports reporters. For instance, to use the Newman HTMLExtra Reporter go to the terminal execute "npm install -g newman-reporter-htmlextra" and run "newman run petstore.collection.json -r htmlextra"
 
 #### To see reports without installation
-Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for petstore collection 
+Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for store collection 
 
 
 
