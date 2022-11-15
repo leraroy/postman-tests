@@ -23,6 +23,3 @@ Newman also supports reporters. For instance, to use the Newman HTMLExtra Report
 
 #### To see reports without installation
 Go to this link to see [newman report](https://leraroy.github.io/postman-tests/) for store collection 
-
-
-
